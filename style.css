@@ -73,14 +73,15 @@ img{
     margin: 0;
     padding: 0;
   }
-}
- h1 {
+
+  h1 {
   font-size: 1.5em;
   margin-bottom: 20px;
   padding-top: 20px;
   font-variant: small-caps;
-}
- h3 {
+  }
+
+  h3 {
   font-size: 1.2em;
   font-variant: small-caps;
   margin-bottom: 20px;
@@ -89,16 +90,16 @@ img{
   .row > * {
     padding-bottom: 20px;
   }
+
   #lezioni {
     background: linear-gradient(0deg, rgba(70,213,173,1) 100%, rgba(34,193,195,1) 0%);
     color: grey;
   }
   #lezioni .row {
-    width: 420px;
+    width: 100%;
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
-
   }
   #lezioni .row > .left,
   #lezioni .row > .right {
@@ -150,7 +151,10 @@ img{
   }
   #steps .row {
     margin-top: 0px;
-    padding-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px 0 10px;
+    width: 100%;
   }
   #steps .row img {
     margin-top: 30px;
@@ -159,7 +163,7 @@ img{
   #steps .row > .central,
   #steps .row > .right{
     float: none;
-    width: 420px;
+    width: 100%;
   }
   #steps .left::after {
     content:"Guarda";
@@ -205,5 +209,26 @@ img{
     width: 20%;
     cursor: pointer;
     text-align: center;
+  }
+
+  #why .row {
+    width: 90%;
+    margin: 0px auto;
+  }
+  #why .row > *:not(h1) {
+    background-color: lightgrey;
+    border-radius: 20px;
+  }
+  #why img {
+    margin-top: 20px;
+  }
+  #why hr {
+    display: none;
+  }
+  #why .first,
+  #why .second,
+  #why .third {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
