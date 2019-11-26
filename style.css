@@ -65,3 +65,145 @@ img{
 .clear {
   clear:both;
 }
+
+/* visualizzazione su screen max-width 420px */
+@media screen and (max-width: 420px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+ h1 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  font-variant: small-caps;
+}
+ h3 {
+  font-size: 1.2em;
+  font-variant: small-caps;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  }
+  .row > * {
+    padding-bottom: 20px;
+  }
+  #lezioni {
+    background: linear-gradient(0deg, rgba(70,213,173,1) 100%, rgba(34,193,195,1) 0%);
+    color: grey;
+  }
+  #lezioni .row {
+    width: 420px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  #lezioni .row > .left,
+  #lezioni .row > .right {
+    width: 100%;
+    float: none;
+  }
+  #lezioni .left {
+    margin-bottom: 50px;
+  }
+  #lezioni .left::after {
+    content:"Prenota";
+    display: block;
+    background-color: rgba(70,20,255,0.1);
+    color: white;
+    border: 1px solid #fff;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    cursor: pointer;
+  }
+  #lezioni .left img {
+    width: 330px;
+    height: 330px;
+  }
+  #lezioni .right {
+    padding-bottom: 50px;
+  }
+  #lezioni .right::after {
+    content:"Scegli";
+    display: block;
+    background-color: rgba(70,20,255,0.1);
+    color: white;
+    border: 1px solid #fff;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    cursor: pointer;
+  }
+  #lezioni .right img {
+    width: 330px;
+    height: 203px;
+  }
+
+  #steps {
+    background-color: #D2691E;
+    text-align: left;
+  }
+  #steps .row {
+    margin-top: 0px;
+    padding-left: 10px;
+  }
+  #steps .row img {
+    margin-top: 30px;
+  }
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right{
+    float: none;
+    width: 420px;
+  }
+  #steps .left::after {
+    content:"Guarda";
+    display: block;
+    background-color: rgba(70,20,255,0.1);
+    color: white;
+    border: 1px solid #fff;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    cursor: pointer;
+    text-align: center;
+
+  }
+  #steps .row .left img{
+    border-radius: 50%;
+    background-color: #c5c5c5;
+  }
+  #steps .central::after {
+    content:"Scrivi";
+    display: block;
+    background-color: rgba(70,20,255,0.1);
+    color: white;
+    border: 1px solid #fff;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    cursor: pointer;
+    text-align: center;
+
+  }
+  #steps .right::after {
+    content:"Acquista";
+    display: block;
+    background-color: rgba(70,20,255,0.1);
+    color: white;
+    border: 1px solid #fff;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    cursor: pointer;
+    text-align: center;
+  }
+}
